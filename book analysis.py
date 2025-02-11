@@ -18,8 +18,9 @@ for line in lines:
         line = line.replace(c, "")
     words = line.split()
     for word in words:
+        word = word.lower()
         unique_words[word] = unique_words.get(word, 0) + 1
 
 print(unique_words)
 print(unique_words['the'])
-print(unique_words['Dracula'])
+print(unique_words['dracula'])
